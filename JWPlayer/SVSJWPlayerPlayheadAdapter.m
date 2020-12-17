@@ -7,7 +7,7 @@
 //
 
 #import "SVSJWPlayerPlayheadAdapter.h"
-#import <JWPlayer-SDK/JWPlayerController.h>
+#import <JWPlayer_iOS_SDK/JWPlayerController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (NSTimeInterval)contentPlayerCurrentTime {
-    return [self.player.playbackPosition doubleValue];
+    return self.player.position;
 }
 
 
@@ -49,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (BOOL)contentPlayerIsPlaying {
-    return [self.player.playerState isEqualToString:@"playing"];
+    return self.player.state == JWPlayerStatePlaying;
 }
 
 @end
