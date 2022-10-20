@@ -5,8 +5,8 @@ This repository contains some playheads in order to integrates third party conte
 ## Requirements
 
 * A _Smart AdServer_ account
-* _Xcode 11.0_ or higher
-* _iOS 8.0_ or higher
+* _Xcode 14.0_ or higher
+* _iOS 11.0_ or higher
 * _Xcode Project_ where _Smart iOS Instream SDK_ is installed
 
 ## Installation
